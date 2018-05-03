@@ -1,0 +1,256 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HenryGBC</title>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <div class="logo">
+            <h2>HenryGBC</h2>
+        </div>
+        <button class="btn btn-primary">
+            <span>Contactame</span>
+        </button>
+    </nav> -->
+    <div class="form-overlay" id="overlay">
+
+        <div class="form-contact">
+                <i class="fa fa-times close" id="close" aria-hidden="true"></i>
+            
+            <form id="form" class="form active">
+                <h4 class="title">
+                    Dejame tu mensaje y enseguida me pondré en contacto contigo
+                </h4>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="name" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="message">Deja tu mensaje</label>
+                    <textarea name="message" id="message" cols="20" rows="3"></textarea>
+                </div>
+                <div class="container-btn">
+                    <div class="btn btn-icon btn-dark" id="send">
+                            <span>Enviar</span>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </form>
+            <div class="success" id="success">
+                <img src="static/img/checked.svg" alt="">
+
+                <h4>Enseguida me pondré en contacto contigo :)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="section-one">
+        <div class="row">
+            <div class="text">
+                <h1>Nuestras Pasiones deben ser prioridad</h1>
+                <h2>Y mi pasión es crear</h2>
+                <button  class="btn btn-light contact">
+                    <span>Contactame</span>
+                </button>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="section-describe">
+        <div class="title">
+            <h2>Quien Soy?</h2>
+        </div>
+        <p>
+            Mi nombre es <strong>Henry Bravo</strong>, tengo mas de 6 años de experiencia en el mundo del desarrollo, 
+            destacando en el desarrollo web, tanto Frontend como Backend.  Apasionado por este mundo, actualmente me considero aprendiz en Marketing Digital.
+        </p>
+           
+        <button class="btn btn-dark">
+            <span>Sigueme</span>
+        </button>
+    </div>
+
+    <div class="section-social ">
+        <div class="half dark"></div>
+        <div class="half light"></div>
+
+        <div class="socials">
+            <div class="social">
+                <div class="icon">
+                    <img src="static/img/twitter.svg" alt="">
+                </div>
+                <div class="title">
+                    <h4>Twitter</h4>
+                </div>
+
+                <div class="description">
+                    <p>Una de mis redes sociales preferidas, en ella escribo sobre lo que me apasiona, 
+                        código, futbol, y cosas en tiempo real</p>
+                </div>
+                <div class="cta">
+                    <a href="https://twitter.com/HenryGBC" class="btn btn-dark" target="_blank">Sigueme</a>
+                </div>
+            </div>
+            <div class="social">
+                <div class="icon">
+                    <img src="static/img/instagram.svg" alt="">
+                </div>
+                <div class="title">
+                    <h4>Instagram</h4>
+                </div>
+
+                <div class="description">
+                    <p>La mejor red social para para capturar momentos, 
+                        en ella estoy enfocado en cuanto a mi día a dia en el mundo del desarrollo y personal</p>
+                </div>
+                <div class="cta">
+                    <a href="https://www.instagram.com/henrygbc/" class="btn btn-dark" target="_blank">Sigueme</a>
+                </div>
+            </div>
+            <div class="social">
+                <div class="icon">
+                    <img src="static/img/linkedin.svg" alt="">
+                </div>
+                <div class="title">
+                    <h4>Linkedin</h4>
+                </div>
+
+                <div class="description">
+                    <p>La red de los profesionales, en ella veran un lado mas formal de mi persona</p>
+                </div>
+                <div class="cta">
+                    <a href="https://www.linkedin.com/in/henry-gabriel-bravo-casanova-b9315583/" class="btn btn-dark" target="_blank">Conectar</a>
+                </div>
+            </div>
+            <div class="social">
+                <div class="icon">
+                    <img src="static/img/github.svg" alt="">
+                </div>
+                <div class="title">
+                    <h4>Github</h4>
+                </div>
+
+                <div class="description">
+                    <p>La mejor plataforma para tener todos nuestros códigos, 
+                        en ella veran varios de mis códigos como esta página por ejm..</p>
+                </div>
+                <div class="cta">
+                    <a href="https://github.com/HenryGBC" class="btn btn-dark" target="_blank">Sigueme</a>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="section-describe section-blog">
+        <div class="title">
+            <h2>También escribo</h2>
+        </div>
+        <p>
+            Escribo en Medium sobre varias cosas, pero sobre todo de programación y sobre mi día a día en el mundo del desarrollo
+            y emprendimiento.
+        </p>
+
+        <div class="posts">
+
+            <a target="_blank" href="https://medium.com/@HenryGBC/el-h%C3%A1bito-de-agradecer-cambi%C3%B3-mi-vida-y-puede-cambiar-la-tuya-90d871c5ae7d" class="post">
+                <div class="image" style="background: url('static/img/post1.jpg') no-repeat center">
+                </div>
+                <div class="content-text">
+                    <div class="title">
+                        <h3>El hábito de agradecer cambió mi vida, y puede cambiar la tuya</h3>
+                    </div>
+                    <div class="date">
+                        Mar 8, 2018
+                    </div>
+
+                </div>
+            </a>
+            <a target="_blank" href="https://medium.com/@HenryGBC/mi-marca-personal-como-emprendimiento-adbab646c7bc" class="post">
+                <div class="image" style="background: url('static/img/post2.jpg') no-repeat center">
+                </div>
+                <div class="content-text">
+                    <div class="title">
+                        <h3>Mi marca personal como emprendimiento</h3>
+                    </div>
+                    <div class="date">
+                        Mar 8, 2018
+                    </div>
+
+                </div>
+            </a>
+            <a target="_blank" href="https://blog.backstartup.com/3-d%C3%ADas-con-backstartup-en-el-google-design-sprint-96545d92fe5b" class="post">
+                <div class="image" style="background: url('static/img/post3.jpg') no-repeat center">
+                </div>
+                <div class="content-text">
+                    <div class="title">
+                        <h3>3 días con Backstartup en el Google Design Sprint</h3>
+                    </div>
+                    <div class="date">
+                        Mar 8, 2018
+                    </div>
+
+                </div>
+            </a>
+        </div>
+
+        <a href="https://medium.com/@henrygbc" target="_blank" class="btn btn-icon btn-dark ">
+            <span>Ver mas posts</span>
+            <i class="fa fa-medium" aria-hidden="true"></i>
+
+        </a>
+    </div>
+
+    <!-- <div class="section-describe section-profesional">
+        <div class="title">
+            <h2>Algunos trabajos</h2>
+        </div>
+    </div> -->
+
+    <footer>
+        <div class="quote">
+            <h4>"El tipo puede cambiar de todo, de cara, de casa, de familia, de novia, de religión, de novia, de Dios,
+                pero hay una cosa que no puede cambiar, no puede cambiar de pasión"
+            </h4>
+        </div>
+
+        <div class="socials">
+            <a target="_blank" href="https://twitter.com/HenryGBC">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/henrygbc/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/henry-gabriel-bravo-casanova-b9315583/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://github.com/HenryGBC">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="https://medium.com/@henrygbc">
+                <i class="fa fa-medium" aria-hidden="true"></i>
+            </a>
+            <a target="_blank" href="mailto:henry.bravo89@gmail.com">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="container-btn">
+            <button  class="btn btn-light contact">
+                <span>Contactame</span>
+            </button>
+        </div>
+        
+    </footer>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
