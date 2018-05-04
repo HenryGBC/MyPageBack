@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact
+from .models import Contact, Post
 # Register your models here.
 
 
@@ -8,3 +8,9 @@ class ContactAdmin(admin.ModelAdmin):
 	list_display = ('name',
 					'email',
 					'message')
+
+
+@admin.register(Post)
+class ContactAdmin(admin.ModelAdmin):
+	list_display = ('title',
+					'date')

@@ -162,46 +162,21 @@
         </p>
 
         <div class="posts">
+            {% for post in posts %}
+                <a target="_blank" href="{{post.url}}" class="post">
+                    <div class="image" style="background: url('{{post.image.url}}') no-repeat center">
+                    </div>
+                    <div class="content-text">
+                        <div class="title">
+                            <h3>{{post.title}}</h3>
+                        </div>
+                        <div class="date">
+                            {{post.date}}
+                        </div>
 
-            <a target="_blank" href="https://medium.com/@HenryGBC/el-h%C3%A1bito-de-agradecer-cambi%C3%B3-mi-vida-y-puede-cambiar-la-tuya-90d871c5ae7d" class="post">
-                <div class="image" style="background: url('static/img/post1.jpg') no-repeat center">
-                </div>
-                <div class="content-text">
-                    <div class="title">
-                        <h3>El hábito de agradecer cambió mi vida, y puede cambiar la tuya</h3>
                     </div>
-                    <div class="date">
-                        Mar 8, 2018
-                    </div>
-
-                </div>
-            </a>
-            <a target="_blank" href="https://medium.com/@HenryGBC/mi-marca-personal-como-emprendimiento-adbab646c7bc" class="post">
-                <div class="image" style="background: url('static/img/post2.jpg') no-repeat center">
-                </div>
-                <div class="content-text">
-                    <div class="title">
-                        <h3>Mi marca personal como emprendimiento</h3>
-                    </div>
-                    <div class="date">
-                        Mar 8, 2018
-                    </div>
-
-                </div>
-            </a>
-            <a target="_blank" href="https://blog.backstartup.com/3-d%C3%ADas-con-backstartup-en-el-google-design-sprint-96545d92fe5b" class="post">
-                <div class="image" style="background: url('static/img/post3.jpg') no-repeat center">
-                </div>
-                <div class="content-text">
-                    <div class="title">
-                        <h3>3 días con Backstartup en el Google Design Sprint</h3>
-                    </div>
-                    <div class="date">
-                        Mar 8, 2018
-                    </div>
-
-                </div>
-            </a>
+                </a>
+            {% endfor %}
         </div>
 
         <a href="https://medium.com/@henrygbc" target="_blank" class="btn btn-icon btn-dark ">

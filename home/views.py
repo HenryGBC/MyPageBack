@@ -5,13 +5,25 @@ from django.utils.decorators import method_decorator
 from django.http import JsonResponse
 from django.template.loader import render_to_string
 from .models import Contact
+from .models import Post
 import json
 
 # Create your views here.
 
 class IndexView(TemplateView):
 	template_name = "index.html"
+    
+	def get_context_data(self, **kwargs):
+		posts = Post.objects.order_by('-date')[:3]
+		for post in posts:
+			print(post.title)
 
+		context = super(IndexView, self).get_context_data(**kwargs)
+		context.update({
+			'posts': posts
+		})
+
+		return context
 
 
 @method_decorator(csrf_exempt, name='dispatch')
