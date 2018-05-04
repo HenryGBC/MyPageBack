@@ -1,0 +1,15 @@
+media/*
+*.pyc
+.idea/*
+.idea/workspace.xml
+.DS_Store
+*.rdb
+*/.cache
+*.swp
+*.csv
+*.dump
+staticfiles/*
+db.sqlite3
+celerybeat-schedule
+celerybeat.pid
+logs/*
