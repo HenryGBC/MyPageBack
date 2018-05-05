@@ -69,11 +69,11 @@ body .navbar .btn {
 body .section-one {
   height: 100vh;
   width: 100%;
-  background: url("../img/developer.jpg");
+  background: url("../img/bg.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-blend-mode: overlay;
-  background-color: rgba(56, 57, 98, 0.82);
+  background-color: rgba(16, 17, 35, 0.82);
 }
 body .section-one .row {
   display: flex;
@@ -100,6 +100,15 @@ body .section-one .text h2 {
   font-weight: 100;
   font-size: 31px;
   letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+body .section-one .text p {
+  color: #fff;
+  font-size: 19px;
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-style: oblique;
+  font-weight: 100;
 }
 body .section-describe {
   padding: 40px;
