@@ -25,6 +25,8 @@ SECRET_KEY = os.environ["SECRET_KEY_MYPAGE"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+PROD = False
+
 ALLOWED_HOSTS = ['henrygbc.com', '173.255.252.250', 'localhost']
 
 
