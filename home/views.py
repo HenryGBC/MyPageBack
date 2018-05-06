@@ -7,6 +7,7 @@ from django.template.loader import render_to_string
 from .models import Contact
 from .models import Post
 import json
+from django.conf import settings
 
 # Create your views here.
 
@@ -20,7 +21,8 @@ class IndexView(TemplateView):
 
 		context = super(IndexView, self).get_context_data(**kwargs)
 		context.update({
-			'posts': posts
+			'posts': posts,
+			'PROD': settings.PROD
 		})
 
 		return context
