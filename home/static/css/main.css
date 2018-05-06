@@ -338,10 +338,6 @@ body .form-overlay .form-contact .title {
   text-align: center;
 }
 body .form-overlay .form-contact .success {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   min-height: 460px;
   display: none;
 }
